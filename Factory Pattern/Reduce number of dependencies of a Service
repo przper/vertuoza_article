@@ -1,0 +1,32 @@
+# Reduce number of dependencies of a UseCase with Factory Design Pattern and interfaces
+
+```
+class Invoice
+{
+	
+}
+class LineService
+{
+	public function __construct(
+		(...)
+		private InvoiceRepository $invoiceRepository,
+		private InvoiceLineRepository $invoiceLineRepository,
+		private InvoiceLineDetailRepository $invoiceLineDetailRepository,
+		private PurchaseOrderRepository,
+		private PurchaseOrderLineRepository,
+		private PurchaseOrderLineDetailRepository,
+	) {
+	}
+
+	/**
+	 * @param LineEntityp[] $lines
+	 */
+	public function handle(
+		DocumentType $type,
+		string $documentId,
+		array $lines,
+		array $lineDetails,
+	) {
+	}
+}
+```
