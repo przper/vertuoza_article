@@ -2,8 +2,6 @@
 
 namespace App\After;
 
-use App\Solution\DocumentRepository;
-
 /** @implements DocumentRepository<Invoice> */
 class InvoiceRepository implements DocumentRepository
 {

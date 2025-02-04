@@ -4,8 +4,6 @@ namespace App\After;
 
 use App\Before\DocumentType;
 use App\Before\Line;
-use App\Solution\DocumentLineRepository;
-use App\Solution\DocumentRepository;
 
 class LineService
 {
@@ -17,6 +15,7 @@ class LineService
 
     /**
      * @param Line[] $updatedLines
+     * @throws \Exception
      */
     public function handleLines(
         DocumentType $type,

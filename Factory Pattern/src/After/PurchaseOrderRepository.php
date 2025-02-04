@@ -2,8 +2,6 @@
 
 namespace App\After;
 
-use App\Solution\DocumentRepository;
-
 /** @implements DocumentRepository<PurchaseOrder> */
 class PurchaseOrderRepository implements DocumentRepository
 {

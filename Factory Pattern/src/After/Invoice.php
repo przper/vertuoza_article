@@ -4,7 +4,6 @@ namespace App\After;
 
 use App\Before\DocumentType;
 use App\Before\Line;
-use App\Solution\Document;
 
 class Invoice implements Document
 {
