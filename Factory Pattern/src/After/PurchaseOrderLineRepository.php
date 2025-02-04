@@ -1,8 +1,11 @@
 <?php
 
-namespace Before;
+namespace App\After;
 
 class PurchaseOrderLineRepository
+use App\Before\Line;
+use App\Solution\DocumentLineRepository;
+
 {
     /** @return Line[] */
     public function findPurchaseOrderById(string $documentId): array
@@ -13,6 +16,5 @@ class PurchaseOrderLineRepository
     /** @param Line[] */
     public function update(array $updatedLines): void
     {
-
     }
 }

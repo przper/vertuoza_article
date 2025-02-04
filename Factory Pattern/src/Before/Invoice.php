@@ -1,15 +1,9 @@
 <?php
 
-namespace After;
+namespace App\Before;
 
-use Before\DocumentType;
-use Before\Line;
-use Solution\Document;
-
-class Invoice implements Document
+class Invoice
 {
-    private DocumentType $documentType = DocumentType::Invoice;
-
     /** @param Line[] $lines */
     public function __construct(
         private string $id,
@@ -41,10 +35,5 @@ class Invoice implements Document
     public function setLines(array $lines): void
     {
         $this->lines = $lines;
-    }
-
-    public function getDocumentType(): DocumentType
-    {
-        return $this->documentType;
     }
 }

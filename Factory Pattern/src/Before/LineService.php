@@ -1,6 +1,8 @@
 <?php
 
-namespace Before;
+namespace App\Before;
+
+use Exception;
 
 class LineService
 {

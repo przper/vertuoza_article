@@ -1,8 +1,8 @@
 <?php
 
-namespace Solution;
+namespace App\Solution;
 
-use Before\Line;
+use App\Before\Line;
 
 interface DocumentLineRepository
 {

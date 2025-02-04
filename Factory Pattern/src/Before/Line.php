@@ -1,6 +1,6 @@
 <?php
 
-namespace Before;
+namespace App\Before;
 
 class Line
 {

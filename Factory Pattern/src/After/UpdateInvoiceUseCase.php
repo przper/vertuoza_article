@@ -1,6 +1,8 @@
 <?php
 
-namespace Before;
+namespace App\After;
+
+use App\Before\DocumentType;
 
 class UpdateInvoiceUseCase
 {
@@ -10,8 +12,4 @@ class UpdateInvoiceUseCase
     {
     }
 
-    public function handle(): Invoice
-    {
-
-    }
 }

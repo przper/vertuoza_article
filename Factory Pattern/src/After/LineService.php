@@ -1,11 +1,11 @@
 <?php
 
-namespace After;
+namespace App\After;
 
-use Before\DocumentType;
-use Before\Line;
-use Solution\DocumentLineRepository;
-use Solution\DocumentRepository;
+use App\Before\DocumentType;
+use App\Before\Line;
+use App\Solution\DocumentLineRepository;
+use App\Solution\DocumentRepository;
 
 class LineService
 {

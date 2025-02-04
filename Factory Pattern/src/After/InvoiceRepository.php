@@ -1,9 +1,8 @@
 <?php
 
-namespace After;
+namespace App\After;
 
-use Solution\Document;
-use Solution\DocumentRepository;
+use App\Solution\DocumentRepository;
 
 class InvoiceRepository implements DocumentRepository
 {

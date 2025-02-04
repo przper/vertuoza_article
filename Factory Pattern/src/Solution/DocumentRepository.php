@@ -1,6 +1,6 @@
 <?php
 
-namespace Solution;
+namespace App\Solution;
 
 interface DocumentRepository
 {

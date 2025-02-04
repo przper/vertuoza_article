@@ -1,8 +1,8 @@
 <?php
 
-namespace Solution;
+namespace App\Solution;
 
-use Before\DocumentType;
+use App\Before\DocumentType;
 
 interface Document
 {

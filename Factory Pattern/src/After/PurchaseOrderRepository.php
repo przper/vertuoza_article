@@ -1,9 +1,8 @@
 <?php
 
-namespace After;
+namespace App\After;
 
-class PurchaseOrderRepository
-{
+use App\Solution\DocumentRepository;
 
     public function findPurchaseOrderById(string $documentId): ?PurchaseOrder
     {

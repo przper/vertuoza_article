@@ -1,6 +1,6 @@
 <?php
 
-namespace After;
+namespace App\Before;
 
 class PurchaseOrderLineRepository
 {
@@ -13,5 +13,6 @@ class PurchaseOrderLineRepository
     /** @param Line[] */
     public function update(array $updatedLines): void
     {
+
     }
 }

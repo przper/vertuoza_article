@@ -1,15 +1,9 @@
 <?php
 
-namespace After;
+namespace App\Before;
 
-use Before\DocumentType;
-use Before\Line;
-use Solution\Document;
-
-class PurchaseOrder implements Document
+class PurchaseOrder
 {
-    private DocumentType $documentType = DocumentType::PurchaseOrder;
-
     /** @param Line[] $lines */
     public function __construct(
         private string $id,
@@ -41,10 +35,5 @@ class PurchaseOrder implements Document
     public function setLines(array $lines): void
     {
         $this->lines = $lines;
-    }
-
-    public function getDocumentType(): DocumentType
-    {
-        return $this->documentType;
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace After;
+namespace App\After;
 
-use Before\Line;
-use Solution\DocumentLineRepository;
+use App\Before\Line;
+use App\Solution\DocumentLineRepository;
 
 class InvoiceLineRepository implements DocumentLineRepository
 {

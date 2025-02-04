@@ -1,6 +1,6 @@
 <?php
 
-namespace After;
+namespace App\Before;
 
 class UpdateInvoiceUseCase
 {
@@ -10,4 +10,8 @@ class UpdateInvoiceUseCase
     {
     }
 
+    public function handle(): Invoice
+    {
+
+    }
 }
