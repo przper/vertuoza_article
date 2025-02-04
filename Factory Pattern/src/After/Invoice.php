@@ -33,11 +33,13 @@ class Invoice implements Document
         $this->totalPrice = $totalPrice;
     }
 
+    /** @return Line[]*/
     public function getLines(): array
     {
         return $this->lines;
     }
 
+    /** @param Line[] $lines*/
     public function setLines(array $lines): void
     {
         $this->lines = $lines;

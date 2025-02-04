@@ -8,5 +8,5 @@ interface Document
 {
     public function getDocumentType(): DocumentType;
 
-    public function setTotalPrice(float $totalPrice);
+    public function setTotalPrice(float $totalPrice): float;
 }

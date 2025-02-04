@@ -7,11 +7,11 @@ class PurchaseOrderLineRepository
     /** @return Line[] */
     public function findPurchaseOrderById(string $documentId): array
     {
-
+        return [];
     }
 
-    /** @param Line[] */
-    public function update(array $updatedLines): void
+    /** @param Line[] $lines*/
+    public function update(array $lines): void
     {
 
     }

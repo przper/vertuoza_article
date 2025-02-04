@@ -4,12 +4,16 @@ namespace App\After;
 
 use App\Solution\DocumentRepository;
 
-    public function findPurchaseOrderById(string $documentId): ?PurchaseOrder
+/** @implements DocumentRepository<PurchaseOrder> */
+class PurchaseOrderRepository implements DocumentRepository
+{
+    public function find(string $id): ?PurchaseOrder
     {
-
+        return null;
     }
 
-    public function update(PurchaseOrder $document): void
+    /** @param PurchaseOrder $document */
+    public function update($document): void
     {
 
     }

@@ -2,12 +2,15 @@
 
 namespace App\Solution;
 
+/** @template T of Document */
 interface DocumentRepository
 {
+    /** @return ?T */
     public function find(string $id): ?Document;
 
     /**
+     * @param T $document
      * @throws \InvalidArgumentException
      */
-    public function update(Document $document): void;
+    public function update($document): void;
 }

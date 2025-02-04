@@ -12,7 +12,7 @@ class LineService
     public function __construct(
         private DocumentRepository $documentRepository,
         private DocumentLineRepository $documentLineRepository,
-	) {
+    ) {
     }
 
     /**
@@ -22,11 +22,11 @@ class LineService
         DocumentType $type,
         string $documentId,
         array $updatedLines,
-	): void {
+    ): void {
         $document = $this->documentRepository->find($documentId);
 
         if ($document === null) {
-            throw new NotFoundException();
+            throw new \Exception("Not found");
         }
 
         $lines = $this->documentLineRepository->find($documentId);

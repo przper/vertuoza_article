@@ -25,11 +25,10 @@ class LineService
         $document = match ($type) {
             DocumentType::Invoice => $this->invoiceRepository->findInvoiceById($documentId),
             DocumentType::PurchaseOrder => $this->purchaseOrderRepository->findPurchaseOrderById($documentId),
-            default => throw new Exception("Type $type->name is not implemented yet"),
         };
 
         if ($document === null) {
-            throw new NotFoundException();
+            throw new Exception("Not found");
         }
 
         $lines = match ($type) {
@@ -37,7 +36,7 @@ class LineService
             DocumentType::PurchaseOrder => $this->purchaseOrderLineRepository->findPurchaseOrderById($documentId),
         };
 
-        if ($type === DocumentType::Invoice) {
+        if ($document instanceof Invoice) {
             $total = 0.0;
             // do stuff, example recalculate total value of Invoice
 
@@ -46,7 +45,7 @@ class LineService
             $this->invoiceRepository->update($document);
         }
 
-        if ($type === DocumentType::PurchaseOrder) {
+        if ($document instanceof PurchaseOrder) {
             $total = 0.0;
             // do stuff, example recalculate total value of PurchaseOrder
 

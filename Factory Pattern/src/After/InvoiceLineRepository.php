@@ -9,11 +9,11 @@ class InvoiceLineRepository implements DocumentLineRepository
 {
     public function find(string $id): array
     {
-
+        return [];
     }
 
-    /** @param Line[] $lines */
-    public function update(array $lines): void
+    /** @param Line[] $updatedLines */
+    public function update(array $updatedLines): void
     {
 
     }

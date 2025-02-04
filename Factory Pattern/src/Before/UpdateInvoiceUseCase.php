@@ -10,8 +10,16 @@ class UpdateInvoiceUseCase
     {
     }
 
-    public function handle(): Invoice
+    public function handle(DocumentType $type, string $documentId): string
     {
+        $lines = [];
 
+        $this->service->handleLines(
+            type: $type,
+            documentId: $documentId,
+            updatedLines: $lines,
+        );
+
+        return $documentId;
     }
 }
