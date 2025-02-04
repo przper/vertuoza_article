@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Solution;
+namespace App\After;
 
 /** @template T of Document */
 interface DocumentRepository
 {
-    /** @return ?T */
+    /** @return ?Document */
     public function find(string $id): ?Document;
 
     /**
-     * @param T $document
+     * @param Document $document
      * @throws \InvalidArgumentException
      */
     public function update($document): void;

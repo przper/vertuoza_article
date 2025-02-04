@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Solution;
+namespace App\After;
 
 use App\Before\Line;
 
